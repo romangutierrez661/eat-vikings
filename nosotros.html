@@ -3,20 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros - Eat Vikings</title>
+    <title>Eat Vikings - Restaurante</title>
+    
+    <!-- Optimización PageSpeed: Preconnect & Font Display -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://images.unsplash.com">
     <link rel="stylesheet" href="css/styles2.css">
-    <!-- Iconos FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Carga diferida de FontAwesome para no bloquear el renderizado -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
 </head>
 <body>
 
-    <!-- Menú Sticky -->
+    <!-- Menú Sticky con Botón de Hamburguesa para Celulares -->
     <nav class="navbar-sticky">
         <div class="nav-container">
-            <a href="index.html" class="nav-link">Inicio</a>
-            <a href="nosotros.html" class="nav-link active">Nosotros</a>
-            <a href="index.html#menu" class="nav-link">Menú</a>
-            <a href="index.html#contacto" class="nav-link">Contacto</a>
+            <span class="nav-brand">EAT VIKINGS</span>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir Menú">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html" class="nav-link active">Inicio</a>
+                <a href="nosotros.html" class="nav-link">Nosotros</a>
+                <a href="#menu" class="nav-link">Menú</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </div>
         </div>
     </nav>
 

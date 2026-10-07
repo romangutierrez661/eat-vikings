@@ -418,3 +418,194 @@ body {
     color: var(--primary-gold);
     width: 20px;
 }
+
+/* --- ESTILOS RESPONSIVE Y MENÚ EN LISTA (MÓVIL) --- */
+
+/* Botón Hamburguesa (Oculto en Escritorio) */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--primary-gold);
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.nav-brand {
+    display: none;
+    font-weight: bold;
+    color: var(--primary-gold);
+    font-size: 1.2rem;
+}
+
+/* Reglas Móviles (Pantallas menores a 768px) */
+@media (max-width: 768px) {
+    .nav-container {
+        justify-content: space-between;
+        padding: 10px 20px;
+        align-items: center;
+    }
+
+    .nav-brand {
+        display: block;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Menú desplegable vertical tipo lista */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: rgba(18, 19, 22, 0.98);
+        border-bottom: 2px solid var(--primary-gold);
+        padding: 15px 0;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.8);
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-link {
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    /* Adaptación de elementos en lista según el pizarrón */
+    .top-social-bar {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .social-item {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .contact-fixed-box {
+        width: 100%;
+    }
+
+    /* Misión, Visión, Valores en Lista Vertical */
+    .mvv-layout {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+    }
+
+    .flex-left, .center-circle-container, .flex-right, .flex-center-bottom {
+        grid-column: 1 / -1 !important;
+    }
+
+    .history-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .history-image-box {
+        margin: 0 auto 20px;
+    }
+}
+
+
+/* --- ESTILOS RESPONSIVE Y MENÚ EN LISTA (MÓVIL) --- */
+
+/* Botón Hamburguesa (Oculto en Escritorio) */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--primary-gold);
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.nav-brand {
+    display: none;
+    font-weight: bold;
+    color: var(--primary-gold);
+    font-size: 1.2rem;
+}
+
+/* Reglas Móviles (Pantallas menores a 768px) */
+@media (max-width: 768px) {
+    .nav-container {
+        justify-content: space-between;
+        padding: 10px 20px;
+        align-items: center;
+    }
+
+    .nav-brand {
+        display: block;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Menú desplegable vertical tipo lista */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: rgba(18, 19, 22, 0.98);
+        border-bottom: 2px solid var(--primary-gold);
+        padding: 15px 0;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.8);
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-link {
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    /* Adaptación de elementos en lista según el pizarrón */
+    .top-social-bar {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .social-item {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .contact-fixed-box {
+        width: 100%;
+    }
+
+    /* Misión, Visión, Valores en Lista Vertical */
+    .mvv-layout {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+    }
+
+    .flex-left, .center-circle-container, .flex-right, .flex-center-bottom {
+        grid-column: 1 / -1 !important;
+    }
+
+    .history-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .history-image-box {
+        margin: 0 auto 20px;
+    }
+}
